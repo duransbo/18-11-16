@@ -38,7 +38,7 @@ var ClassScroll = function () {
 
 
 
-	var mtdGo = function () {
+	var mtdGo = function (e) {
 
 		var id = this.href;
 		var url = location.href;
@@ -63,7 +63,7 @@ var ClassScroll = function () {
 			}
 		}
 
-		event.preventDefault();
+		e.preventDefault();
 		location.href = '#' + id.replace(url.replace(/#(\w*\/?)*/, ''), '');
 		prmEndY = window.scrollY - sub;
 		jumpNumber = parseInt(Math.sqrt(Math.pow(prmEndY - prmIniY, 2)) / jumpProp);
