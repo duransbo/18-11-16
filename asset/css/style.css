@@ -116,6 +116,9 @@ p {
 .video {
 	background-color: #e4e4e4;
 }
+.video .y {
+	margin-top: 50px;
+}
 /* !VIDEO */
 
 

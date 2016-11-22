@@ -175,6 +175,9 @@ var ClassMenu = function () {
 			mtdParallax();
 		}
 
+		$.get('.y').width = $.get('.video').clientWidth * .8;
+		$.get('.y').height = $.get('.y').width * .5625;
+
 	};
 
 
